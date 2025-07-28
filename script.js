@@ -49,32 +49,7 @@ function addProduct() {
 
   // finally use the appendChild method from the output variable you had from earlier.
   // output.appendChild(yourdivnamehere)
-
+  console.log(addProduct);
   // this line is to prevent the webpage from reloading. DO NOT MODIFY IT.
   return false;
-}
-//
-const product = document.querySelector("#product");
-
-product.addEventListener("output", onSubmit);
-
-function onSubmit(e) {
-  e.preventDefault();
-
-  if (submitInput.value === "") {
-    msg.classList.add("error");
-    msg.innerHTML = "Please enter all fields";
-
-    setTimeout(() => msg.remove(), 3000);
-  } else {
-    const li = document.createElement("li");
-
-    li.appendChild(document.createTextNode(`${product.value}`));
-
-    userList.appendChild(li);
-
-    // Clear fields
-    nameInput.value = "";
-    emailInput.value = "";
-  }
 }
