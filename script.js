@@ -7,7 +7,7 @@ productArray = [];
 function addProduct() {
   // Assignment 1
   // You need to change the id that this collects to product.
-  let input = document.getElementById("input").value;
+  let input = document.getElementById("output").value;
   // You will need to create a div using javascript,
   // Use this site to help you understand how: https://www.w3schools.com/jsref/met_document_createelement.asp
 
@@ -56,12 +56,12 @@ function addProduct() {
 //
 const product = document.querySelector("#product");
 
-product.addEventListener("input", onSubmit);
+product.addEventListener("output", onSubmit);
 
 function onSubmit(e) {
   e.preventDefault();
 
-  if (productInput.value === "") {
+  if (submitInput.value === "") {
     msg.classList.add("error");
     msg.innerHTML = "Please enter all fields";
 
