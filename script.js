@@ -4,14 +4,14 @@ productArray = [];
 function addProduct() {
   // Assignment 1
   // You need to change the id that this collects to product.
-  let input = document.getElementById("output").value;
+  let input = document.getElementById("product").value;
   // You will need to create a div using javascript,
   // Use this site to help you understand how: https://www.w3schools.com/jsref/met_document_createelement.asp
-
+  let div = document.getElementById("submit");
   // Once you create create a div,
   // you will need to get the output using the same method you did for the input
   // Except you do not need to include the value at the end.
-
+  console.log(input);
   // CHALLENGE SECTION:
   // If you feel up for a challenge, try and use an if statement if(condition){run this code}
   // to return an alert if the input is empty. You will need to get the id as in previous assignments above
@@ -30,7 +30,7 @@ function addProduct() {
   // Please look up how to use push on an array here: https://www.w3schools.com/jsref/jsref_push.asp
   // use console.log and pass in the product array to check if you have it setup correctly.
   // console.log(productArray)
-  Array.forEach(input, output, arr), input;
+
   console.log(productArray);
 
   // Assignment 3:
