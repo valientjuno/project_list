@@ -1,5 +1,3 @@
-//
-//
 // NOTE: PLEASE READ EACH INSTRUCTION COMMENT CAREFULLY TO HELP YOU PROCESS THIS PROJECT
 // IF YOU ARE STUCK ASK AN INSTRUCTOR FOR HELP, ALWAYS WRITE THE CODE BELOW THE ASSIGNMENTS.
 
@@ -7,7 +5,7 @@ productArray = [];
 function addProduct() {
   // Assignment 1
   // You need to change the id that this collects to product.
-  let input = document.getElementById("output").value;
+  let input = document.getElementById("input").value;
   // You will need to create a div using javascript,
   // Use this site to help you understand how: https://www.w3schools.com/jsref/met_document_createelement.asp
 
@@ -49,7 +47,7 @@ function addProduct() {
 
   // finally use the appendChild method from the output variable you had from earlier.
   // output.appendChild(yourdivnamehere)
-  console.log(addProduct);
+
   // this line is to prevent the webpage from reloading. DO NOT MODIFY IT.
   return false;
 }
