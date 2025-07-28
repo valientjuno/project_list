@@ -1,14 +1,13 @@
 // NOTE: PLEASE READ EACH INSTRUCTION COMMENT CAREFULLY TO HELP YOU PROCESS THIS PROJECT
 // IF YOU ARE STUCK ASK AN INSTRUCTOR FOR HELP, ALWAYS WRITE THE CODE BELOW THE ASSIGNMENTS.
-
 productArray = [];
 function addProduct() {
   // Assignment 1
   // You need to change the id that this collects to product.
-  let input = document.getElementById("input").value;
+  let input = document.getElementById("output").value;
   // You will need to create a div using javascript,
   // Use this site to help you understand how: https://www.w3schools.com/jsref/met_document_createelement.asp
-
+  let div = document.getElementById("output");
   // Once you create create a div,
   // you will need to get the output using the same method you did for the input
   // Except you do not need to include the value at the end.
@@ -31,7 +30,7 @@ function addProduct() {
   // Please look up how to use push on an array here: https://www.w3schools.com/jsref/jsref_push.asp
   // use console.log and pass in the product array to check if you have it setup correctly.
   // console.log(productArray)
-
+  console.log(productArray);
   // Assignment 3:
   // Hint: Use a loop(look up the javascript loop on w3schools.) on your product array and set the max length of the loop to the array using
   // dot notation (array.length) and then you do the following:
