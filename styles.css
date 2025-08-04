@@ -62,7 +62,7 @@ label {
 }
 
 div#output {
-  display: none;
+  display: block;
   border: #444 solid 2px;
   margin: 3%;
 }
