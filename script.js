@@ -72,6 +72,7 @@
 // this line is to prevent the webpage from reloading. DO NOT MODIFY IT.
 //   return false;
 // }
+
 let input = document.getElementById("product");
 let output = document.getElementById("output");
 let productArray = [];
@@ -96,4 +97,5 @@ function addProduct() {
 
   input.value = "";
 }
+
 return false;
