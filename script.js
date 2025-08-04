@@ -96,3 +96,4 @@ function addProduct() {
 
   input.value = "";
 }
+return false;
