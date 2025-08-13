@@ -2,44 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Todo App</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Todo List</title>
   </head>
   <body>
-    <div class="container">
-      <h2>Product List App</h2>
-      <h3>using Javascript, HTML and CSS</h3>
-      <p id="instruction">
-        Create a customer input system. <br />
-        You can look to using any kind of tools you want and we recommend
-        looking at w3Schools.com for additional information on how to add users
-        to the list below.
-        <br />
-        <br />
-        You will notice some in place scaffolding to help get you there in
-        creating a product input system. The Javascript file will only reference
-        an array, a function, and an object. You must include the array of
-        products after adding them inside the console, look inside the js file
-        for more details.
-        <br />
-        <br />
-        Hint: Look for a way to add items to each individual cell of the div
-        with the ID of output. Also find a way to prevent users from adding an
-        empty name field or customer id.
-      </p>
-    </div>
-    <div class="container2">
-      <div>
-        <label for="product">Product Name</label>
-        <input type="text" id="product" autocomplete="off" />
-        <input type="submit" onclick="addProduct()" />
-        <div id="output"></div>
+    <div
+      class="h-100 w-full flex items-center justify-center bg-teal-lightest font-sans mt-20"
+    >
+      <div
+        class="bg-gray-900 rounded shadow p-6 m-4 w-full lg:w-3/4 lg:max-w-lg"
+      >
+        <div class="mb-4">
+          <h1 class="text-3xl md:text-4xl text-indigo-600 font-medium mb-2">
+            To-Do List App
+          </h1>
+          <div class="flex mt-4">
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 mr-4"
+              name="text"
+              id="text"
+              placeholder="Add Todo"
+            />
+            <input type="hidden" id="saveIndex" />
+            <button
+              class="p-2 lg:px-4 md:mx-2 text-center text-white border border-solid border-indigo-600 rounded bg-indigo-600"
+              id="add-task-btn"
+            >
+              Add
+            </button>
+            <button
+              class="p-2 lg:px-4 md:mx-2 text-center border border-solid border-indigo-600 rounded bg-indigo-600 text-white"
+              style="display: none"
+              id="save-todo-btn"
+            >
+              Edit Todo
+            </button>
+          </div>
+        </div>
+        <div id="listBox"></div>
       </div>
-      <div id="output"></div>
     </div>
     <script src="./script.js"></script>
-    <script src="./todo-template.js"></script>
   </body>
 </html>
